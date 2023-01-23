@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+footer
+{
+	position:relative;
+}
+
+
+html
+{
+	background-color: hsl(216, 12%, 8%);
+	color:hsl(216, 12%, 54%);
+	display:grid;
+	place-items:center;
+	font-size:15px;
+	min-height:100vh;
+	font-family: 'Overpass', sans-serif;
+	font-weight:400;
+	
+}
+
+#rating-state, #thanks-state
+{
+	padding:2rem;
+	background-image:linear-gradient(hsl(213, 19%, 18%),hsl(216, 12%, 12%));
+	border-radius:1rem;
+	width:18rem;
+	
+	
+}
+#rating-state
+{
+	place-items:left;
+	display:grid;
+	
+}
+#thanks-state
+{
+	place-items:center;
+	display:grid;
+	
+}
+
+
+
+
+#rating-state img
+{
+	background-color:hsl(213, 19%, 25%);
+	padding:0.9rem;
+	border-radius:50%;
+	width:1.1rem;
+}
+
+h1
+{
+	color:hsl(0, 0%, 100%);
+	font-weight:700;
+}
+
+
+button
+{
+	font-weight:700;
+	font-family: 'Overpass', sans-serif;
+	
+	border:0;
+}
+
+.rate-buttons
+{
+	display:flex;
+	min-width:18rem;
+	justify-content:center;
+}
+
+.rate-buttons button
+{
+	width:2.5rem;
+	height:2.5rem;
+	background-color:hsl(213, 19%, 25%);
+	color:hsl(216, 12%, 54%);
+	border-radius:50%;
+		
+}
+
+.rate-buttons button:not(:first-of-type)
+{
+	margin-left:1rem;
+}
+
+.rate-buttons button:hover
+{
+	background-color: hsl(217, 12%, 63%);
+	transition:.4s;
+	color:hsl(0, 0%, 100%);
+	cursor:pointer;
+}
+
+.rate-buttons button:focus
+{
+	background-color:hsl(25, 97%, 53%);
+	transition:.4s;
+	color:hsl(0, 0%, 100%);
+}
+
+#submit-button
+{
+	background-color: hsl(25, 97%, 53%);
+	text-transform:uppercase;
+	padding:.8rem;
+	width:100%;
+	border-radius:0;
+	border-radius:3rem;
+	margin-top:1.5rem;
+	font-size:1rem;
+	color:hsl(0, 0%, 100%);
+	cursor:pointer;
+	
+	
+}
+
+#submit-button:hover
+{
+	transition:0.4s;
+	background-color: hsl(0, 0%, 100%);
+	color:hsl(25, 97%, 53%);
+
+}
+
+#thanks-state
+{
+	text-align:center;
+}
+
+
+
+
+
+.selected
+{
+	background-color:hsl(213, 19%, 25%);
+	color:hsl(25, 97%, 53%);
+	margin-top:2rem;
+	border-radius:2rem;
+	padding:0.3rem 1rem;
+	font-weight:700;
+	
+}
+
+
+#thanks-state p
+{
+	margin-bottom:0;
+}
+
+
+
+
+@media (min-width:600px)
+{
+	#rating-state,#thanks-state{width:20.5rem;}
+	.rate-buttons button
+	{width:3rem;
+	height:3rem;}
+}
